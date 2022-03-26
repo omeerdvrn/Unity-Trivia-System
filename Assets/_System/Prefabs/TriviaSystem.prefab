@@ -1,0 +1,471 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5060157488712567063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5060157488712567057}
+  - component: {fileID: 5060157488712567056}
+  m_Layer: 0
+  m_Name: TriviaSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5060157488712567057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488712567063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5060157488851641815}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5060157488712567056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488712567063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd1e2c5a9f35244d93d5e2d7a9c4902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questionList:
+  - {fileID: 11400000, guid: 6a02f7eea40fc7e4c829ed7ecf23150d, type: 2}
+  - {fileID: 11400000, guid: 00d15dfa21461e245bc24d280173fe3c, type: 2}
+  - {fileID: 11400000, guid: 47a871ee86e605342afbe82adc1a1d40, type: 2}
+  - {fileID: 11400000, guid: 777549dae31e0c04497b300eaac5da60, type: 2}
+  - {fileID: 11400000, guid: 9e411a330256e044b8d6a1468a30b928, type: 2}
+  - {fileID: 11400000, guid: b648c4a87bc4a984b9c3fc454274f906, type: 2}
+  - {fileID: 11400000, guid: cea3dd7609820bc438e0a6b673b24d12, type: 2}
+  - {fileID: 11400000, guid: 41e7481104f51c24da872526a6e7e277, type: 2}
+  - {fileID: 11400000, guid: 43a67b20cb4e2c64098dc90b50fbb5c8, type: 2}
+  - {fileID: 11400000, guid: cf80240811482e64f9ed5c3ac028e835, type: 2}
+  OnSelectedCorrect: {fileID: 11400000, guid: 7df53d35d100bd144ae0d390d4ab4eb1, type: 2}
+  OnSelectedWrong: {fileID: 11400000, guid: f0c0fddd5de91b846854b604b24866eb, type: 2}
+  _correctValue: 1
+  _wrongValue: 1
+  currentQuestion: {fileID: 0}
+--- !u!1 &5060157488851641819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5060157488851641815}
+  - component: {fileID: 5060157488851641814}
+  - component: {fileID: 5060157488851641813}
+  - component: {fileID: 5060157488851641812}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5060157488851641815
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488851641819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4255193568709650725}
+  - {fileID: 6696909033652148210}
+  m_Father: {fileID: 5060157488712567057}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &5060157488851641814
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488851641819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &5060157488851641813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488851641819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &5060157488851641812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060157488851641819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1001 &5060157488389575452
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5060157488851641815}
+    m_Modifications:
+    - target: {fileID: 1930207118498890989, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_Name
+      value: TriviaListener
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 788.5472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 921.0428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -50.285954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+--- !u!4 &6696909033652148210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1930207118498890990, guid: e380eb6d8b87d9040b05ffed9aa9a9ce, type: 3}
+  m_PrefabInstance: {fileID: 5060157488389575452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5060157489453236768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5060157488851641815}
+    m_Modifications:
+    - target: {fileID: 9021895791733592855, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5060157488712567056}
+    - target: {fileID: 9021895791733592855, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791733592855, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TriviaSystem.TriviaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791733593320, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791733593320, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791733593320, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791733593320, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791745179943, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791745179943, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791745179943, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791745179943, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414746, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5060157488712567056}
+    - target: {fileID: 9021895791992414746, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414746, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TriviaSystem.TriviaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414747, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414747, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414747, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895791992414747, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792005458694, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_Name
+      value: TriviaUIPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015106, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5060157488712567056}
+    - target: {fileID: 9021895792211015106, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015106, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TriviaSystem.TriviaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015107, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015107, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015107, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792211015107, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792674416802, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792674416802, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792674416802, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792674416802, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479133, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5060157488712567056}
+    - target: {fileID: 9021895792843479133, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479133, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TriviaSystem.TriviaController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479134, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479134, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479134, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021895792843479134, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+--- !u!224 &4255193568709650725 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 9021895792005458693, guid: dbb711154eda04a48a85939a572920e3, type: 3}
+  m_PrefabInstance: {fileID: 5060157489453236768}
+  m_PrefabAsset: {fileID: 0}
